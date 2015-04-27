@@ -1,0 +1,26 @@
+Script started on Sat Jun 04 19:45:55 2005
+# prtvtoc /dev/rdsk/c1d1p0
+* /dev/rdsk/c1d1p0 partition map
+*
+* Dimensions:
+*     512 bytes/sector
+*      63 sectors/track
+*      64 tracks/cylinder
+*    4032 sectors/cylinder
+*    7620 cylinders
+*    7618 accessible cylinders
+*
+* Flags:
+*   1: unmountable
+*  10: read-only
+*
+*                          First     Sector    Last
+* Partition  Tag  Flags    Sector     Count    Sector  Mount Directory
+       0      3    01      12096   4197312   4209407
+       1      2    00    4209408  26506368  30715775
+       2      5    00          0  30715776  30715775
+       8      1    01          0      4032      4031
+       9      9    01       4032      8064     12095
+# exit
+
+script done on Sat Jun 04 19:45:57 2005

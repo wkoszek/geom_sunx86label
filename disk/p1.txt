@@ -1,0 +1,97 @@
+Script started on Sat Jun 04 19:46:16 2005
+# fotma   rmat
+Searching for disks...done
+
+
+AVAILABLE DISK SELECTIONS:
+       0. c0d0 <DEFAULT cyl 241 alt 2 hd 128 sec 63>
+          /pci@0,0/pci-ide@9/ide@0/cmdk@0,0
+       1. c1d0 <drive type unknown>
+          /pci@0,0/pci-ide@9/ide@1/cmdk@0,0
+       2. c1d1 <DEFAULT cyl 7618 alt 2 hd 64 sec 63>
+          /pci@0,0/pci-ide@9/ide@1/cmdk@1,0
+Specify disk (enter its number): 2
+selecting c1d1
+Controller working list found
+[disk formatted, defect list found]
+Warning: Current Disk has mounted partitions.
+
+
+FORMAT MENU:
+        disk       - select a disk
+        type       - select (define) a disk type
+        partition  - select (define) a partition table
+        current    - describe the current disk
+        format     - format and analyze the disk
+        fdisk      - run the fdisk program
+        repair     - repair a defective sector
+        show       - translate a disk address
+        label      - write label to the disk
+        analyze    - surface analysis
+        defect     - defect list management
+        backup     - search for backup labels
+        verify     - read and display labels
+        save       - save new disk/partition definitions
+        volname    - set 8-character volume name
+        !<cmd>     - execute <cmd>, then return
+        quit
+format> partition
+
+
+PARTITION MENU:
+        0      - change `0' partition
+        1      - change `1' partition
+        2      - change `2' partition
+        3      - change `3' partition
+        4      - change `4' partition
+        5      - change `5' partition
+        6      - change `6' partition
+        7      - change `7' partition
+        select - select a predefined table
+        modify - modify a predefined partition table
+        name   - name the current table
+        print  - display the current table
+        label  - write partition map and label to the disk
+        !<cmd> - execute <cmd>, then return
+        quit
+partition> print
+Current partition table (original):
+Total disk cylinders available: 7618 + 2 (reserved cylinders)
+
+Part      Tag    Flag     Cylinders        Size            Blocks
+  0       swap    wu       3 - 1043        2.00GB    (1041/0/0)  4197312
+  1       root    wm    1044 - 7617       12.64GB    (6574/0/0) 26506368
+  2     backup    wm       0 - 7617       14.65GB    (7618/0/0) 30715776
+  3 unassigned    wm       0               0         (0/0/0)           0
+  4 unassigned    wm       0               0         (0/0/0)           0
+  5 unassigned    wm       0               0         (0/0/0)           0
+  6 unassigned    wm       0               0         (0/0/0)           0
+  7 unassigned    wm       0               0         (0/0/0)           0
+  8       boot    wu       0 -    0        1.97MB    (1/0/0)        4032
+  9 alternates    wu       1 -    2        3.94MB    (2/0/0)        8064
+
+partition> quit
+
+
+FORMAT MENU:
+        disk       - select a disk
+        type       - select (define) a disk type
+        partition  - select (define) a partition table
+        current    - describe the current disk
+        format     - format and analyze the disk
+        fdisk      - run the fdisk program
+        repair     - repair a defective sector
+        show       - translate a disk address
+        label      - write label to the disk
+        analyze    - surface analysis
+        defect     - defect list management
+        backup     - search for backup labels
+        verify     - read and display labels
+        save       - save new disk/partition definitions
+        volname    - set 8-character volume name
+        !<cmd>     - execute <cmd>, then return
+        quit
+format> quit
+# exit
+
+script done on Sat Jun 04 19:46:29 2005
