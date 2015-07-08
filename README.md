@@ -1,4 +1,7 @@
 # geom_sunx86label
+
+[![Build Status](https://travis-ci.org/wkoszek/geom_sunx86label.svg)](https://travis-ci.org/wkoszek/geom_sunx86label)
+
 FreeBSD GEOM class for Solaris x86 disk labels
 
 I wrote it in 2005 when Solaris Express was available. I was running
