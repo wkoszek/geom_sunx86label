@@ -1,5 +1,10 @@
 # Copyright 2005 Wojciech A. Koszek <wkoszek@FreeBSD.org>
-PROG=diskread
 SRCS=diskread.c geom_sunx86label_enc.c
+CFLAGS+= -Wall -pedantic
 
-.include <bsd.prog.mk>
+all: diskread
+
+diskread: $(SRCS)
+	$(CC) $(CFLAGS) -o $@ $(SRCS)
+clean:
+	rm -rf diskread
