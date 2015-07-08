@@ -2,13 +2,17 @@
  * BSDv2 License
  * Copyright 2005 Wojciech A. Koszek <wkoszek@FreeBSD.org>
  */
+#include <sys/types.h>
 #include <sys/param.h>
+
 #include <errno.h>
 #include <fcntl.h>
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
 #include <sysexits.h>
+#include <sys/uio.h>
+#include <unistd.h>
 
 #include "sun_disklabel.h"
 
@@ -53,7 +57,7 @@ main (int argc, char **argv)
 		exit(EXIT_FAILURE);
 	}
 	/* Sample disks fetched from local disk */
-	rfd = open("disk/c1d1s1", O_RDONLY);
+	rfd = open("data/disk/c1d1s1", O_RDONLY);
 	if (rfd == -1) {
 		(void) fprintf(stderr, "Couldn't open disk\n");
 		exit(EXIT_FAILURE);

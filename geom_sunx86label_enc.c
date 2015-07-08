@@ -23,17 +23,23 @@
  * OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF
  * SUCH DAMAGE.
  */
-
+#define _XOPEN_SOURCE
  
 #include <sys/cdefs.h>
 
+#include <stdio.h>
+#include <stdint.h>
 #include <sys/types.h>
-#include <sys/endian.h>
 #include <sys/errno.h>
 
-#include <stdio.h>
-
 #include "sun_disklabel.h"
+
+#ifndef __freebsd__
+#define le32dec(p) *(uint32_t *)p
+#define le16dec(p) *(uint16_t *)p
+#define le32enc(d, s) *(uint32_t *)d = s
+#define le16enc(d, s) *(uint16_t *)d = s
+#endif
 
 /*
  * Parts of this code were borrowed from geom_sunlabel_enc.c
