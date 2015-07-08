@@ -1,4 +1,3 @@
-p=./data/disk/c1d1p1              Sanity: 0x600ddeee
        Label version: 1
          Volume name: <'        '>
          Sector size: 512

@@ -1,4 +1,3 @@
-p=./data/disk/c1d1s1              Sanity: 0x0
        Label version: 0
          Volume name: <'        '>
          Sector size: 0
