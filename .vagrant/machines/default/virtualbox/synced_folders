@@ -1,0 +1,1 @@
+{"nfs":{"/vagrant":{"nfs":true,"guestpath":"/vagrant","hostpath":"/w/repos/geom_sunx86label","disabled":false,"type":"nfs","map_uid":502,"map_gid":20,"nfs_udp":true,"nfs_version":3,"uuid":"732085898"}}}
