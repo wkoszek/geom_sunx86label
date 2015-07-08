@@ -1,3 +1,4 @@
+              Sanity: 0x0
        Label version: 0
          Volume name: <'        '>
          Sector size: 0

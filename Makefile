@@ -7,7 +7,7 @@ all: diskread
 diskread: $(SRCS)
 	$(CC) $(CFLAGS) -o $@ $(SRCS)
 
-tests:
+tests:	diskread
 	./diskread ./data/disk/c1d1p0 > test/c1d1p0.o
 	./diskread ./data/disk/c1d1p1 > test/c1d1p1.o
 	./diskread ./data/disk/c1d1p2 > test/c1d1p2.o

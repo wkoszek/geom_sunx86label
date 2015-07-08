@@ -1,3 +1,4 @@
+              Sanity: 0x600ddeee
        Label version: 1
          Volume name: <'        '>
          Sector size: 512
