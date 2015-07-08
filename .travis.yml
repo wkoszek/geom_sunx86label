@@ -1,0 +1,8 @@
+script: make && make tests && make check
+language: c
+compiler:
+        - clang
+        - gcc
+os:
+        - linux
+        - os
