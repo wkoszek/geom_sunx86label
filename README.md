@@ -16,3 +16,8 @@ Unless otherwise stated, everything in this project is available on
 BSD v2 license.
 
 Wojciech Koszek
+
+# Author
+
+- Wojciech Adam Koszek, [wojciech@koszek.com](mailto:wojciech@koszek.com)
+- [http://www.koszek.com](http://www.koszek.com)
